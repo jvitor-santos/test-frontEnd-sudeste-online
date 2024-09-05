@@ -12,11 +12,12 @@ export default {
         'success': '#198754',
         'danger': '#dc3545',
         'warning': '#ffc107',
-        'info': '#0dcaf0',
+        'info': '#589BFF',
         'light': '#f8f9fa',
         'dark': '#212529',
         'white': '#ffffff',
         'black': '#000000',
+        'red': '#FF0000',
       }
     },
   },
