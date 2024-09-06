@@ -9,6 +9,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@egjs/flicking-plugins": "^4.7.1",
+    "@egjs/react-flicking": "^4.11.4",
     "eslint-plugin-tailwindcss": "^3.17.4",
     "lucide-react": "^0.363.0",
     "react": "^18.2.0",

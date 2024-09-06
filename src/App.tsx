@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 
 import { Card } from './components/Card'
 import { Header } from './components/Header'
+import { Carousel } from './components/Carousel'
 
 interface Book {
   id: string
@@ -136,23 +137,26 @@ export function App() {
             vem sendo utilizado desde o século XVI.
           </span>
         </section>
-        <section className="flex py-12">
+        <section className="flex max-w-[1174px] py-12">
           {!loading && books.length > 0 && books[0].volumeInfo ? (
-            books.map((book) => (
-              <Card
-                key={book.id}
-                title={book.volumeInfo.title}
-                author={
-                  book.volumeInfo.authors
-                    ? book.volumeInfo.authors[0]
-                    : 'Autor desconhecido'
-                }
-                thumbnail={
-                  book.volumeInfo.imageLinks?.thumbnail ||
-                  'https://img.freepik.com/premium-vector/no-photo-available-vector-icon-default-image-symbol-picture-coming-soon-web-site-mobile-app_87543-18055.jpg'
-                }
-              />
-            ))
+            <Carousel>
+              {books.map((book) => (
+                <div key={book.id} className="flex pr-9">
+                  <Card
+                    title={book.volumeInfo.title}
+                    author={
+                      book.volumeInfo.authors
+                        ? book.volumeInfo.authors[0]
+                        : 'Autor desconhecido'
+                    }
+                    thumbnail={
+                      book.volumeInfo.imageLinks?.thumbnail ||
+                      'https://img.freepik.com/premium-vector/no-photo-available-vector-icon-default-image-symbol-picture-coming-soon-web-site-mobile-app_87543-18055.jpg'
+                    }
+                  />
+                </div>
+              ))}
+            </Carousel>
           ) : (
             <p>Carregando ou sem resultados</p>
           )}
