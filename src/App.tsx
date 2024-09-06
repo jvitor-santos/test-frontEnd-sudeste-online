@@ -1,6 +1,39 @@
+import { useEffect, useState } from 'react'
+
+import { Card } from './components/Card'
 import { Header } from './components/Header'
 
+interface Book {
+  id: string
+  volumeInfo: {
+    title: string
+    authors: string[]
+    imageLinks: {
+      thumbnail: string
+    }
+  }
+}
+
+interface GoogleBooksAPIResponse {
+  items: Book[]
+}
+
 export function App() {
+  const [books, setBooks] = useState<Book[]>([])
+  const [loading, setLoading] = useState(true)
+
+  useEffect(() => {
+    fetch('https://www.googleapis.com/books/v1/volumes?q=HARRY%20POTTER')
+      .then((response) => response.json())
+      .then((data: GoogleBooksAPIResponse) => {
+        setBooks(data.items || [])
+        setLoading(false)
+      })
+      .catch((error) => {
+        console.error('Erro ao buscar livros:', error)
+      })
+  }, [])
+
   return (
     <div className="flex size-full min-h-screen flex-col items-center bg-white">
       <Header />
@@ -82,6 +115,47 @@ export function App() {
           <span className="pt-1 text-xs font-normal">
             FONTE: NEW YORK TIMES
           </span>
+        </section>
+        <section className="flex w-[960px] flex-col pt-12">
+          <span className="text-4xl font-extrabold">Aint oupt sain crays</span>
+          <span className="pt-6 text-lg font-normal">
+            Lorem Ipsum é simplesmente uma{' '}
+            <a
+              href="https://www.google.com"
+              target="_blank"
+              className="text-info"
+              rel="noreferrer"
+            >
+              simulação de link
+            </a>{' '}
+            da indústria tipográfica e de impressos, e vem sendo utilizado desde
+            o século XVI, quando um impressor desconhecido pegou uma bandeja de
+            tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem
+            Ipsum sobreviveu não só a cinco séculos. Lorem Ipsum é simplesmente
+            uma simulação de texto da indústria tipográfica e de impressos, e
+            vem sendo utilizado desde o século XVI.
+          </span>
+        </section>
+        <section className="flex py-12">
+          {!loading && books.length > 0 && books[0].volumeInfo ? (
+            books.map((book) => (
+              <Card
+                key={book.id}
+                title={book.volumeInfo.title}
+                author={
+                  book.volumeInfo.authors
+                    ? book.volumeInfo.authors[0]
+                    : 'Autor desconhecido'
+                }
+                thumbnail={
+                  book.volumeInfo.imageLinks?.thumbnail ||
+                  'https://img.freepik.com/premium-vector/no-photo-available-vector-icon-default-image-symbol-picture-coming-soon-web-site-mobile-app_87543-18055.jpg'
+                }
+              />
+            ))
+          ) : (
+            <p>Carregando ou sem resultados</p>
+          )}
         </section>
       </main>
     </div>
