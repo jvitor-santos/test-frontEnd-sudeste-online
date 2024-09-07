@@ -83,8 +83,8 @@
   <h3>TailwindCSS:</h3>
   <p>O Tailwind CSS é uma estrutura de design CSS utilitária que serve para simplificar e acelerar o desenvolvimento de interfaces de usuário. Suas vantagens incluem produtividade rápida, configurabilidade para atender às necessidades do projeto, promoção da consistência visual, manutenção simplificada do código, flexibilidade para diferentes estilos de desenvolvimento, redução de tamanho de arquivos CSS e um ecossistema ativo com plugins e ferramentas adicionais. Em resumo, o Tailwind CSS é escolhido por sua eficiência, simplicidade e capacidade de oferecer uma experiência de desenvolvimento coesa.</p>
 
-  <h3>Vite</h3>
-  <p>O Vite.js é uma ferramenta de build e desenvolvimento front-end que oferece uma experiência rápida e eficiente. Suas vantagens incluem tempo de carregamento instantâneo em ambiente de desenvolvimento, suporte nativo a ES Modules, Hot Module Replacement (HMR) extremamente rápido, e builds otimizados para produção. O Vite é altamente configurável, suportando múltiplos frameworks como Vue, React e Svelte, e possui uma arquitetura extensível com plugins. Em resumo, o Vite.js é escolhido por sua velocidade, simplicidade e capacidade de melhorar o fluxo de trabalho do desenvolvedor.</p>
+  <h3>Vite:</h3>
+  <p>O Vite é uma ferramenta de build e desenvolvimento front-end que oferece uma experiência rápida e eficiente. Suas vantagens incluem tempo de carregamento instantâneo em ambiente de desenvolvimento, suporte nativo a ES Modules, Hot Module Replacement (HMR) extremamente rápido, e builds otimizados para produção. O Vite é altamente configurável, suportando múltiplos frameworks como Vue, React e Svelte, e possui uma arquitetura extensível com plugins. Em resumo, o Vite.js é escolhido por sua velocidade, simplicidade e capacidade de melhorar o fluxo de trabalho do desenvolvedor.</p>
 </div>
 
 <div>

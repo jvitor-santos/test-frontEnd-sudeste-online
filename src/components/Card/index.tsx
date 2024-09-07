@@ -6,7 +6,7 @@ interface CardProps {
 
 export function Card({ title, author, thumbnail }: CardProps) {
   return (
-    <div className="flex h-[440.81px] w-[257.5px] flex-col">
+    <div className="flex h-[440.81px] flex-col lg:w-[257.5px]">
       <img
         src={thumbnail}
         alt="card book"

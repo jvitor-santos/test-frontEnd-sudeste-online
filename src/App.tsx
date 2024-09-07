@@ -42,7 +42,7 @@ export function App() {
     <div className="flex size-full min-h-screen flex-col items-center bg-white">
       <Header />
       <main className="flex size-full min-h-screen flex-col items-center">
-        <section className="w-[960px] text-lg font-normal leading-7">
+        <section className="font-normal leading-[28.8px] xs:w-[300px] xs:pt-12 xs:text-base lg:w-[960px] lg:text-lg">
           <span>
             Lorem Ipsum é simplesmente uma simulação de texto da indústria
             tipográfica e de impressos, e vem sendo utilizado desde o século
@@ -64,9 +64,9 @@ export function App() {
             editoração eletrônica, permanecendo essencialmente inalterado.
           </span>
         </section>
-        <section className="flex w-[1174px] flex-col items-center justify-center pt-12">
+        <section className="flex flex-col items-center justify-center pt-12 lg:w-[1174px]">
           <span className="text-5xl font-extrabold text-green">“</span>
-          <span className="text-center text-4xl font-normal">
+          <span className="text-center font-normal xs:text-2xl lg:text-4xl">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore dolore magna aliqua dollor sit
             amet aint.
@@ -78,9 +78,9 @@ export function App() {
             ”
           </span>
         </section>
-        <section className="flex w-[960px] flex-col">
+        <section className="flex flex-col xs:w-full xs:px-6 lg:w-[960px]">
           <div>
-            <span className="text-lg font-normal">
+            <span className="text-[18px] font-normal leading-[28.8px]">
               Lorem Ipsum é simplesmente uma simulação de texto da indústria
               tipográfica e de impressos, e vem sendo utilizado desde o século
               XVI, quando um impressor desconhecido pegou uma bandeja de tipos e
@@ -88,7 +88,7 @@ export function App() {
               sobreviveu não só a cinco séculos.
             </span>
           </div>
-          <div className="flex w-[960px] flex-row justify-around pt-12 text-lg font-normal">
+          <div className="flex flex-row gap-48 pt-12 font-normal xs:text-xs lg:w-[960px] lg:text-lg">
             <span>
               • Dollor sit amet abin coin said upper;
               <br />
@@ -120,8 +120,8 @@ export function App() {
             FONTE: NEW YORK TIMES
           </span>
         </section>
-        <section className="flex w-[960px] flex-col pt-12">
-          <span className="text-4xl font-extrabold">Aint oupt sain crays</span>
+        <section className="flex flex-col pt-12 xs:px-6 xs:text-center lg:w-[960px] lg:text-left">
+          <span className="text-4xl font-extrabold ">Aint oupt sain crays</span>
           <span className="pt-6 text-lg font-normal">
             Lorem Ipsum é simplesmente uma{' '}
             <a
@@ -140,7 +140,7 @@ export function App() {
             vem sendo utilizado desde o século XVI.
           </span>
         </section>
-        <section className="flex max-w-[1174px] py-12">
+        <section className="flex py-12 xs:w-[340px] lg:w-full lg:max-w-[1174px]">
           {!loading && books.length > 0 && books[0].volumeInfo ? (
             <Carousel>
               {books.map((book) => (
@@ -164,9 +164,11 @@ export function App() {
             <p>Carregando ou sem resultados</p>
           )}
         </section>
-        <section className="flex w-[960px] flex-col pt-12">
-          <span className="text-4xl font-extrabold">Ipsum dollor amet</span>
-          <span className="pt-6 text-lg font-normal">
+        <section className="flex flex-col pt-12 lg:w-[960px]">
+          <span className="text-4xl font-extrabold xs:text-center lg:text-left">
+            Ipsum dollor amet
+          </span>
+          <span className="pt-6 text-lg font-normal xs:mx-6 xs:text-center lg:mx-0 lg:text-left">
             Lorem Ipsum é simplesmente uma simulação de texto da indústria
             tipográfica e de impressos, e vem sendo utilizado desde o século
             XVI, quando um impressor desconhecido pegou uma bandeja de tipos e
@@ -186,7 +188,7 @@ export function App() {
         <span className="text-[36px] font-extrabold leading-[46.8px]">
           Leia também...
         </span>
-        <div className="flex w-full justify-around gap-12 pt-12">
+        <div className="flex w-full gap-12 pt-12 xs:flex-col lg:flex-row lg:justify-around">
           <CardFooter />
           <CardFooter />
           <CardFooter />
