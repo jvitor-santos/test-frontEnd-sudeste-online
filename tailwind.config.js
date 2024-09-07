@@ -19,6 +19,8 @@ export default {
         black: '#000000',
         red: '#FF0000',
         green: '#2FBB69',
+        gray: '#F8F8F9',
+        petroleo: '#21262F',
       },
     },
   },
