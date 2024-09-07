@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react'
 import { Card } from './components/Card'
 import { Header } from './components/Header'
 import { Carousel } from './components/Carousel'
+import { ArticleCard } from './components/ArticleCard'
 
 interface Book {
   id: string
@@ -170,6 +171,10 @@ export function App() {
             os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum
             sobreviveu não só a cinco séculos.
           </span>
+        </section>
+        <section className="flex flex-col gap-y-12 pt-12">
+          <ArticleCard />
+          <ArticleCard />
         </section>
       </main>
     </div>
