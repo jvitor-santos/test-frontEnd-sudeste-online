@@ -4,6 +4,7 @@ import { Card } from './components/Card'
 import { Header } from './components/Header'
 import { Carousel } from './components/Carousel'
 import { ArticleCard } from './components/ArticleCard'
+import { Tags } from './components/Tags'
 
 interface Book {
   id: string
@@ -175,6 +176,9 @@ export function App() {
         <section className="flex flex-col gap-y-12 pt-12">
           <ArticleCard />
           <ArticleCard />
+        </section>
+        <section className="pt-12">
+          <Tags />
         </section>
       </main>
     </div>
