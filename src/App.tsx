@@ -5,6 +5,7 @@ import { Header } from './components/Header'
 import { Carousel } from './components/Carousel'
 import { ArticleCard } from './components/ArticleCard'
 import { Tags } from './components/Tags'
+import { CardFooter } from './components/CardFooter'
 
 interface Book {
   id: string
@@ -181,6 +182,16 @@ export function App() {
           <Tags />
         </section>
       </main>
+      <footer className="flex flex-col items-center pb-24 pt-12">
+        <span className="text-[36px] font-extrabold leading-[46.8px]">
+          Leia também...
+        </span>
+        <div className="flex w-full justify-around gap-12 pt-12">
+          <CardFooter />
+          <CardFooter />
+          <CardFooter />
+        </div>
+      </footer>
     </div>
   )
 }
