@@ -5,8 +5,8 @@ import { AiOutlineLike } from 'react-icons/ai'
 
 export function ArticleCard() {
   return (
-    <div className="flex w-[960px] rounded-3xl bg-gray">
-      <div className="mx-12 flex flex-col py-8">
+    <div className="flex rounded-3xl bg-gray xs:w-[330px] lg:w-[960px]">
+      <div className="flex flex-col py-8 lg:mx-12">
         <span className="text-[28px] font-extrabold leading-[36.4px]">
           DESIGN BETTER. FASTER. TOGETHER.
         </span>

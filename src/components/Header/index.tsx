@@ -5,8 +5,8 @@ import { Badge } from '../Badge'
 
 export function Header() {
   return (
-    <header className="flex h-[387px] w-[1174px] flex-col items-center justify-center">
-      <img src="/assets/png/icon.png" alt="icone" />
+    <header className="flex flex-col items-center justify-center xs:text-center md:text-center lg:h-[387px] lg:w-[1174px]">
+      <img src="/assets/png/icon.png" alt="icone" className="xs:pt-12" />
       <h1 className="pt-12 text-5xl font-extrabold">
         DESIGN BETTER. FASTER. TOGETHER.
       </h1>
