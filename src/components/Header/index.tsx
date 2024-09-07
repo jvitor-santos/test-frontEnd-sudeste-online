@@ -15,14 +15,18 @@ export function Header() {
         experiences
       </h2>
 
-      <div className="flex w-full items-center justify-center gap-x-6 pt-12">
-        <div className="text-xs">
-          <span className="font-semibold">CATEGORIA: </span>
-          <span className="font-extrabold text-info">POR ONDE COMEÇAR</span>
+      <div className="flex w-full items-center justify-center pt-12 xs:gap-2 lg:gap-x-6">
+        <div className="xs:flex xs:flex-col xs:text-xs lg:flex-none lg:flex-row lg:text-xs">
+          <span className="font-semibold">CATEGORIA:</span>
+          <span className="font-extrabold text-info lg:ml-2">
+            POR ONDE COMEÇAR
+          </span>
         </div>
 
-        <Badge icon={<LuClock3 />} text="7 MIN LEITURA" />
-        <Badge icon={<IoCalendarOutline />} text="01/SETEMBRO/2024" />
+        <div className="flex xs:flex-col xs:gap-3 lg:flex-row lg:gap-6">
+          <Badge icon={<LuClock3 />} text="7 MIN LEITURA" />
+          <Badge icon={<IoCalendarOutline />} text="01/SETEMBRO/2024" />
+        </div>
       </div>
     </header>
   )

@@ -88,7 +88,7 @@ export function App() {
               sobreviveu não só a cinco séculos.
             </span>
           </div>
-          <div className="flex flex-row gap-48 pt-12 font-normal xs:text-xs lg:w-[960px] lg:text-lg">
+          <div className="flex flex-row pt-12 font-normal xs:gap-12 xs:text-xs lg:w-[960px] lg:gap-48 lg:text-lg">
             <span>
               • Dollor sit amet abin coin said upper;
               <br />
