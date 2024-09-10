@@ -60,16 +60,16 @@
   <h3>Clone o projeto e acesse a pasta:</h3>
 
   ```bash
-  $ git clone git@github.com:jvitor-santos/test-frontEnd-sudeste-online.git && cd test-frontEnd-sudeste-online
+  git clone git@github.com:jvitor-santos/test-frontEnd-sudeste-online.git && cd test-frontEnd-sudeste-online
   ```
 
   <h3>Siga os passos abaixo para executar a aplicação localmente:</h3>
 
   ```bash
 
-  $ npm i
+  npm i
 
-  $ npm run dev
+  npm run dev
   ```
 </div>
 
